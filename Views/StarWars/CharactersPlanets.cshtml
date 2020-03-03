@@ -1,0 +1,19 @@
+﻿
+@{
+    ViewData["Title"] = "CharactersPlanets";
+}
+
+<h1>Characters Planets</h1>
+
+
+<form asp-action="Characters" method="post">
+    Enter Person Id:<input type="number" name="id" value="" />
+    <input type="submit"/>
+</form>
+
+<form asp-action="Planets" method="post">
+    Enter Planet Id: <input type="number" name="id" />
+    <input type="submit" />
+</form>
+
+

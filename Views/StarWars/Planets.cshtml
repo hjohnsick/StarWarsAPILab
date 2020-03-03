@@ -1,0 +1,26 @@
+﻿
+@{
+    ViewData["Title"] = "Planets";
+}
+
+<h1 align="center">Planets</h1>
+<style>
+    table, th, td {
+        border: 1px solid black;
+    }
+</style>
+<table align="center">
+   <tr>
+       <th align="center">Name</th>
+       <th align="center">Rotation Period</th>
+       <th align="center">Orbital Period</th>
+       <th align="center">Diameter</th>
+   </tr>
+
+    <tr>
+        <td align="center">@Model.Name</td>
+        <td align="center">@Model.Rotation_period</td>
+        <td align="center">@Model.Orbital_period</td>
+        <td align="center">@Model.Diameter</td>
+    </tr>
+</table>

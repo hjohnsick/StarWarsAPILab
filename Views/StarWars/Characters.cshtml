@@ -1,0 +1,42 @@
+﻿
+@{
+    ViewData["Title"] = "Characters";
+}
+@model CharactersRoot
+
+    <style>
+        table, th, td {
+            border: 1px solid black;
+        }
+    </style>
+<h1 align="center">Characters</h1>
+
+<table align="center">
+   <tr>
+       <th align="center">Name</th>
+       <th align="center">Height</th>
+       <th align="center">Mass</th>
+       <th align="center">Hair Color</th>
+   </tr>
+
+   <tr>
+       <td align="center">@Model.Name</td>
+       <td align="center">@Model.Height</td>
+       <td align="center">@Model.Mass</td>
+       <td align="center">@Model.Hair_color</td>
+       @*<td>
+           @foreach (var ship in Model.Vehicles)
+           {
+               @ship
+           }
+       </td>
+
+
+       <td>
+           @foreach (var ship in Model.Starships)
+           {
+               @ship
+           }
+       </td>*@
+   </tr>
+</table>
